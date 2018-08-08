@@ -10,6 +10,9 @@ sudo apt remove -y vim-tiny
 sudo apt install -y vim
 
 
+#installing chromium
+#https://www.simplified.guide/ubuntu/install-chromium-browser
+sudo apt install -y chromium-browser
 
 
 
