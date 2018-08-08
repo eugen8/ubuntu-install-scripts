@@ -105,7 +105,6 @@ echo "source ~/.wp-cli/wp-completion.bash" >> ~/.bash_aliases
 sudo chmod g+s /var/www/html  #to be creating files with the group of html folder (i.e. www-data)
 
 # don't do this on the production or some actual server, but it's good for localhost development!
-sudo chmod 777 /var/www/html/*
-
+sudo chmod -R 777 /var/www/html
 
 
