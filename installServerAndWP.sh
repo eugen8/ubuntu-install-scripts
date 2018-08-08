@@ -100,3 +100,12 @@ source ~/.wp-cli/wp-completion.bash
 touch ~/.bash_aliases
 echo "source ~/.wp-cli/wp-completion.bash" >> ~/.bash_aliases
 
+#https://superuser.com/questions/386885/creating-files-and-directories-with-a-certain-owner-user-group-while-sudoing
+#https://unix.stackexchange.com/questions/182212/chmod-gs-command
+sudo chmod g+s /var/www/html  #to be creating files with the group of html folder (i.e. www-data)
+
+# don't do this on the production or some actual server, but it's good for localhost development!
+sudo chmod 777 /var/www/html/*
+
+
+
