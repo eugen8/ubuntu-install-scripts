@@ -97,3 +97,6 @@ wget https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.
 mv wp-completion.bash ~/.wp-cli/
 source ~/.wp-cli/wp-completion.bash
 
+touch ~/.bash-aliases
+echo "source ~/.wp-cli/wp-completion.bash" >> ~/.bash-aliases
+source ~/.wp-cli/wp-completion.bash
