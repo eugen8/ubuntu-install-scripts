@@ -97,6 +97,7 @@ wget https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.
 mv wp-completion.bash ~/.wp-cli/
 source ~/.wp-cli/wp-completion.bash
 
+
 touch ~/.bash_aliases
 echo "source ~/.wp-cli/wp-completion.bash" >> ~/.bash_aliases
 
@@ -107,4 +108,7 @@ sudo chmod g+s /var/www/html  #to be creating files with the group of html folde
 # don't do this on the production or some actual server, but it's good for localhost development!
 sudo chmod -R 777 /var/www/html
 
+#https://nodejs.org/en/download/package-manager/
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
