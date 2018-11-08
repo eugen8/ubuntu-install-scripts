@@ -5,7 +5,7 @@
 # mysql-secure-installation at:   https://dev.mysql.com/doc/refman/5.7/en/mysql-secure-installation.html
  
 echo "Installing mysqlserver and client"
-#sudo apt-get install mysql-server -y
+sudo apt-get install mysql-server -y
 
 echo "Updating firewall rules";
 #sudo ufw allow mysql
