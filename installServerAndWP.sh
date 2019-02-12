@@ -112,3 +112,21 @@ sudo chmod -R 777 /var/www/html
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+
+# debug php
+# https://www.zyxware.com/articles/5765/how-to-install-php-debugger
+sudo gedit /etc/php/7.2/apache2/php.ini
+# Add these 2 lines at end of the file
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 1
+# Run the "sudo apt-get install php-xdebug" command for installing the xdebug
+# to enable logging: 
+# https://www.loggly.com/ultimate-guide/php-logging-basics/
+display_errors = On
+display_startup_errors = On
+error_reporting = E_ALL
+html_errors = On
+log_errors = On
+error_log = /var/www/html/php_errors.log
+
+
