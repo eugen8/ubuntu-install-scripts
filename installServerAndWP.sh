@@ -132,3 +132,9 @@ error_log = /var/www/html/php_errors.log
 
 # Increasing upload size:
 # https://help.servmask.com/2018/10/27/how-to-increase-maximum-upload-file-size-in-wordpress/
+# add to .htaccess the following:
+php_value upload_max_filesize 512M
+php_value post_max_size 512M
+php_value memory_limit 512M
+php_value max_execution_time 300
+php_value max_input_time 300
