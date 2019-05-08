@@ -1,3 +1,3 @@
 # ubuntu-install-scripts
 
-Contains bash scripts to install things on Ubuntu localhost
+My own collection of bash scripts to install things on Ubuntu (in localhost)
