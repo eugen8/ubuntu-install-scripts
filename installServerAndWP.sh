@@ -7,7 +7,7 @@ sudo systemctl enable apache2
 sudo systemctl start apache2
 
 
-sudo apt-get install php7.2 php7.2-mysql libapache2-mod-php7.2 php7.2-cli php7.2-cgi php7.2-gd 
+sudo apt-get install -y php7.4 php7.4-mysql libapache2-mod-php7.4 php7.4-cli php7.4-cgi php7.4-gd 
 
 #https://stackoverflow.com/questions/13633638/create-file-with-contents-from-shell-script
 sudo cat > /var/www/html/info.php << EOF
