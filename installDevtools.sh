@@ -18,3 +18,9 @@ sudo apt-get install code # or code-insiders
 sudo apt install openjdk-16-jdk-headless
 
 export JAVA_HOME=/usr/lib/jdk-16.0.1+9
+
+curl -s "https://get.sdkman.io" | bash 
+
+sdk install scala
+
+# to uninstall sdk: https://sdkman.io/install:
