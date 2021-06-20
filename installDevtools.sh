@@ -15,5 +15,6 @@ sudo apt-get update
 sudo apt-get install code # or code-insiders
 
 # install OpenJDK
-sudo apt-get install openjdk-14-jdk
-export JAVA_HOME=/usr/lib/jvm/java-1.14.0-openjdk-amd64
+sudo apt install openjdk-16-jdk-headless
+
+export JAVA_HOME=/usr/lib/jdk-16.0.1+9
